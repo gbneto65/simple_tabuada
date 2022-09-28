@@ -10,8 +10,9 @@ import winsound
 import pyfiglet
 
 def screen_title (screen_text):
-    title_screen = pyfiglet.figlet_format(screen_text, font = "standard")
-    print(titl e_screen)
+    """    title_screen = pyfiglet.figlet_format(screen_text, font = "standard")
+    """
+    print(screen_text)
 
 
 

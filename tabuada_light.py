@@ -4,14 +4,15 @@ Created on Wed Sep 28 11:05:01 2022
 
 @author: BRGUBO
 """
-input("Press enter to proceed...")
+
 from random import randint
 import winsound
-import pyfiglet
+from art import *
+
 
 def screen_title (screen_text):
-    title_screen = pyfiglet.figlet_format(screen_text, font = "standard")
-    print(title_screen)
+    screen_text = text2art(screen_text, font='small')
+    print(screen_text)
 
 
 
@@ -26,7 +27,7 @@ right_counter = 0
 
 
 
-trials = 50
+trials = 5
 
 
 

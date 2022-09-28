@@ -4,9 +4,9 @@ Created on Wed Sep 28 11:05:01 2022
 
 @author: BRGUBO
 """
+input("Press enter to proceed...")
 from random import randint
 import winsound
-
 import pyfiglet
 
 def screen_title (screen_text):

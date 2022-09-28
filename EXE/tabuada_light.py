@@ -4,16 +4,31 @@ Created on Wed Sep 28 11:05:01 2022
 
 @author: BRGUBO
 """
+input("Press enter to proceed...")
 from random import randint
 import winsound
-frequency_correct = 2500  # Set Frequency To 2500 Hertz
-duration_correct = 100  # Set Duration To 1000 ms == 1 second
+import pyfiglet
 
+def screen_title (screen_text):
+    title_screen = pyfiglet.figlet_format(screen_text, font = "standard")
+    print(titl e_screen)
+
+
+
+
+screen_title("Multiplication Table")
+
+frequency_correct = 2500  # Set Frequency To 2500 Hertz
+duration_correct = 300  # Set Duration To 1000 ms == 1 second
 frequency_wrong = 500  # Set Frequency To 2500 Hertz
 duration_wrong = 500  # Set Duration To 1000 ms == 1 second
 right_counter = 0
 
+
+
 trials = 50
+
+
 
 for counter in range(trials):   
     
@@ -41,6 +56,26 @@ for counter in range(trials):
     print(f"Trial number: {counter} of {trials}")
 
           
+print('\n\n - Great that you were here')
+print(f"\nPercentage of correct answer is: {round(perc_right_answer,1)} %")
+print(f"Trial number: {counter} of {trials}")
+
+
+
+if perc_right_answer < 70:
+    screen_title("YOU ARE BULLSHIT BAD ")
+elif perc_right_answer < 80:
+     screen_title("COULD BE BETTER")
+elif perc_right_answer < 90:
+     screen_title("ALMOST THERE")
+elif perc_right_answer < 100:
+     screen_title("GREAT JOB")
+else:
+    screen_title("YOU ARE THE BEST")
+
+
+print('\n\n ...type something to end program')
+a= input()
 
 
 
